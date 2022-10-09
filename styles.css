@@ -1,0 +1,126 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+
+.header {
+    background-color: grey;
+    height: 100px;
+    width: 80%;
+    font-size: 50px;
+    line-height: 100px;
+    color: white;
+}
+
+.body {
+    background-color: white;
+    height: 400px;
+    width: 80%;
+    display: flex;
+}
+
+.block {
+    height: 400px;
+    width: 50%;
+    border-right: solid;
+}
+
+.name {
+    font-size: 80px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.fraction-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line {
+    background-color: black;
+    height: 8px;
+    width: 60%;
+    opacity: 0.8;
+}
+
+input {
+    font-size: 60px;
+    text-align: center;
+    width: 40%;
+    height: 100px;
+}
+
+.footer {
+    background-color: white;
+    height: 200px;
+    width: 80%;
+    border-top: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape-ex3{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 80px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    position: relative;
+    transition: all .3s linear;
+}
+
+.shape-ex3 > p{
+    position: relative;
+    z-index: 1;
+}
+
+.shape-ex3::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.shape-ex3:hover{
+    color: #fff;
+}
+
+.shape-ex3:hover::before{
+    width: 100%;
+}
+
+.result {
+    background-color: grey;
+    opacity: 0.7;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.result > div {
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    line-height: 100px;
+}

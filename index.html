@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            轉移比例計算機
+        </div>
+
+        <div class="body">
+            <div class="block" style="border-left: solid;">
+                <div class="name">甲</div>
+                <div class="fraction-box">
+                    <div>
+                        <input placeholder="分子" id="A1" type="number">
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div>
+                        <input placeholder="分母" id="A2" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="name">乙</div>
+                <div class="fraction-box">
+                    <div>
+                        <input placeholder="分子" id="B1" type="number">
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div>
+                        <input placeholder="分母" id="B2" type="number">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="shape-ex3" onclick="Calculate()"><p>計算</p></div>
+        </div>
+
+        <div class="result">
+            <div id="result1">暫時沒有結果</div>
+            <div id="result2"></div>
+            <div id="result3"></div>
+            <div id="result4"></div>
+        </div>
+    </div>
+</body>
+</html>

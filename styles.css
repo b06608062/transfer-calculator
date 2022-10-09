@@ -116,6 +116,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow: scroll;
 }
 
 .result > div {
